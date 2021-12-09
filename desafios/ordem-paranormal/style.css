@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+div {
+    display: inline-block;
+    border: 1px solid black;
+    text-align: center;
+    height: 1000px;
+    width: 300px;
+    margin: 13px
+}
+
+div#sangue {
+   background-image: url(imagens/Sangue.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+div#sangue:hover {
+    background-color: red;
+}
+
+div#morte {
+    background-image: url(imagens/Morte.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#morte:hover {
+    background-color: black;
+    color: white;
+}
+
+div#conhecimento {
+    background-image: url(imagens/Conhecimento.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#conhecimento:hover {
+    background-color: yellow;
+}
+
+div#energia {
+    background-image: url(imagens/Energia.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#energia:hover {
+    background-color: purple;
+}
+
+div#medo {
+    background-image: url(imagens/Medo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div#medo:hover {
+    background-color: black;
+    color: white;
+}
