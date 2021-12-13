@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+h1 {
+    text-align: center;
+}
+
+div {
+    display: inline-block;
+    border: 1px solid black;
+    width: 400px;
+    height: 800px;
+    margin: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div#personagens {
+    background-image: url(imagens/personagens.jpg);
+}
+
+div#infectados {
+    background-image: url(imagens/infectados.jpg);
+    background-position: center top;
+}
+
+div#antagonistas {
+    background-image: url(imagens/antagonista.jpg);
+    background-position:   top center;
+    
+}
+
+footer {
+    background-color: brown;
+    text-align: center;
+}
