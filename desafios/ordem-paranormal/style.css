@@ -8,6 +8,14 @@ a{
     text-decoration: none;
 }
 
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 div {
     display: inline-block;
     border: 5px solid white;

@@ -1,10 +1,31 @@
 @charset "UTF-8";
 
-h1 {
-    text-align: center;
+@font-face {
+    font-family:'Titulos';
+    src: url('fontes/rocksdeath.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-div {
+h1 {
+    text-align: center;
+    font-family: 'Titulos';
+    font-size: 350%;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div {   
     display: inline-block;
     border: 1px solid black;
     width: 400px;
