@@ -1,12 +1,20 @@
 @charset "UTF-8";
 
+body {
+    background-color: darkolivegreen;
+}
+
+a{
+    text-decoration: none;
+}
+
 div {
     display: inline-block;
-    border: 1px solid black;
+    border: 5px solid white;
     text-align: center;
     height: 1000px;
     width: 300px;
-    margin: 13px
+    margin: 8px
 }
 
 div#sangue {
@@ -26,8 +34,7 @@ div#morte {
 }
 
 div#morte:hover {
-    background-color: black;
-    color: white;
+    background-color: gray;
 }
 
 div#conhecimento {
@@ -59,4 +66,9 @@ div#medo {
 div#medo:hover {
     background-color: black;
     color: white;
+}
+
+footer{
+    background-color: brown;
+    text-align: center;
 }
