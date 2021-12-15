@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de transição</title>
+    <style>
+
+        body {
+            background-color: green ;
+        }
+
+    div {
+    display: inline-block;
+    border: 5px solid black;
+    text-align: center;
+    height: 1000px;
+    width: 300px;
+    margin: 8px;
+}
+
+div#sangue {
+   background-image: url(Sangue.png);
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+div#sangue:hover {
+    background-color: gray;
+}
+
+        
+        
+        .efeito {
+            border: 1px solid black;
+            color: black;
+            padding: 20px;
+            margin: 10px;
+            font-size: 24px;
+            line-height: 24px;
+            border-radius: 10px;
+            position: relative;
+            box-sizing: border-box;
+            cursor: pointer;
+            transition: all 700ms ease;
+        }
+
+        .efeito-1 {
+            background: rgb(97, 81, 81);
+            transform-style: preserve-3d;
+
+        }
+
+        .efeito:after {
+            border: 1px solid black;
+            top: 100%;
+            left: 0px;
+            height: 1000px;
+            width: 300px;
+            padding: 20px;
+            position: absolute;
+            background-image: url(Sangue2.png);
+            border-radius: 10px;
+            box-sizing: border-box;
+            content: '';
+            transform-origin: left bottom;
+            transform: rotateX(90deg);
+        }
+
+        .efeito-1:hover{
+            transform-origin: center bottom;
+            transform: rotateX(-90deg) translateY(300px);
+        }
+    </style>
+</head>
+<body>
+    <a href="#" target="_blank">
+        
+        <div class="efeito efeito-1" id="sangue"></div>
+    </a>
+</body>
+</html>

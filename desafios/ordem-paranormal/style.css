@@ -1,19 +1,38 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'Titulos';
+    src: url('fontes/Franchise.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family:'Sub-titulos';
+    src: url('fontes/Arcane.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     background-color: darkolivegreen;
 }
 
-a{
+h1 {
+    font-family: 'Titulos';
+    font-size: 400%;
+    text-align: center;
+    padding-bottom: 60px;
+    
+}
+
+a {
     text-decoration: none;
 }
 
 a:visited {
     color: black;
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 div {
@@ -22,7 +41,12 @@ div {
     text-align: center;
     height: 1000px;
     width: 300px;
-    margin: 8px
+    margin: 8px;
+    border-radius: 10px;
+}
+
+a > div {
+    text-decoration: none;
 }
 
 div#sangue {
@@ -79,4 +103,158 @@ div#medo:hover {
 footer{
     background-color: brown;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+.efeito {
+    border: 1px solid black;
+    color: black;
+    padding: 20px;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    border-radius: 10px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 700ms ease;
+}
+
+.efeito-1 {
+    background: rgba(255, 0, 0, 0.68);
+    transform-style: preserve-3d;
+
+}
+
+.efeito-1::after {
+    border: 1px solid black;
+    top: 100%;
+    left: 0px;
+    height: 1000px;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    background-image: url(imagens/Sangue2.png);
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: '';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.efeito-1:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(300px);
+}
+
+.efeito-2 {
+    background: rgb(97, 81, 81);
+    transform-style: preserve-3d;
+
+}
+
+.efeito-2::after {
+    border: 1px solid black;
+    top: 100%;
+    left: 0px;
+    height: 1000px;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    background-image: url(imagens/Morte2.png);
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: '';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.efeito-2:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(300px);
+}
+
+.efeito-3 {
+    background: rgba(255, 255, 0, 0.625);
+    transform-style: preserve-3d;
+
+}
+
+.efeito-3::after {
+    border: 1px solid black;
+    top: 100%;
+    left: 0px;
+    height: 1000px;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    background-image: url(imagens/Conhecimento2.png);
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: '';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.efeito-3:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(300px);
+}
+
+.efeito-4 {
+    background: rgba(128, 0, 128, 0.743);
+    transform-style: preserve-3d;
+
+}
+
+.efeito-4::after {
+    border: 1px solid black;
+    top: 100%;
+    left: 0px;
+    height: 1000px;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    background-image: url(imagens/Energia2.png);
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: '';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.efeito-4:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(300px);
+}
+
+.efeito-5 {
+    background: rgba(0, 0, 0, 0.805);
+    transform-style: preserve-3d;
+
+}
+
+.efeito-5::after {
+    border: 1px solid black;
+    top: 100%;
+    left: 0px;
+    height: 1000px;
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    background-image: url(imagens/Medo2.png);
+    border-radius: 10px;
+    box-sizing: border-box;
+    content: '';
+    transform-origin: left bottom;
+    transform: rotateX(90deg);
+}
+
+.efeito-5:hover{
+    transform-origin: center bottom;
+    transform: rotateX(-90deg) translateY(300px);
 }
