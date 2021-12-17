@@ -16,7 +16,7 @@
 
 
 body {
-    background-image: url(imagens/fundo.jpg);
+    background-image: url(#);
     background-size: cover;
 }
 
@@ -25,7 +25,7 @@ h1 {
     font-size: 400%;
     text-align: center;
     padding: 20px;
-    color: white;
+    color: black;
     background-color: rgba(0, 0, 0, 0.458);
     
 }
