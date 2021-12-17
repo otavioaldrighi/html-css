@@ -7,8 +7,36 @@
     font-style: normal;
 }
 
-        h1 {
+:root {
+    --cor1:#E8231C;
+    --cor2:#DB211A;
+    --cor3:#C21D17;
+    --cor4:#9C1713;
+    --cor5:#5C0E0B;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+}
+
+header> h1 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.240) ;
+}
+
+h1 {
     font-family: 'Titulos';
     font-size: 400%;
     text-align: center;
+}
+
+h2 {
+
 }
