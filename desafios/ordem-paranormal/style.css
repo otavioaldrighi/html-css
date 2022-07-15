@@ -15,11 +15,6 @@
 }
 
 
-body {
-    background-image: url(#);
-    background-size: cover;
-}
-
 h1 {
     font-family: 'Titulos';
     font-size: 400%;
@@ -144,7 +139,7 @@ footer > p > a:hover {
     background-image: url(imagens/Sangue2.png);
     border-radius: 10px;
     box-sizing: border-box;
-    content: '';
+    content: '#';
     transform-origin: left bottom;
     transform: rotateX(90deg);
 }
